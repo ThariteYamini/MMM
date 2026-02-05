@@ -69,17 +69,36 @@ button:hover{background:#3bb6ad;}
 </head>
 
 <body>
+
 <div class="card">
     <h1>MMM</h1>
     <div class="tagline">Music • Mantra • Healing • Message</div>
 
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <button>Login</button>
+    <!-- ✅ ID add chesam -->
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <!-- ✅ onclick add chesam -->
+    <button onclick="loginUser()">Login</button>
 
     <div class="link" onclick="location.href='signup.html'">
         New here? Create account
     </div>
 </div>
+
+<script>
+function loginUser(){
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if(email !== "" && password !== ""){
+        // ✅ login ayyaka home page
+        window.location.href = "home.html";
+    } else {
+        alert("Please enter email and password");
+    }
+}
+</script>
+
 </body>
 </html>
