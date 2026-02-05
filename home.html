@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MMM | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(180deg,#1e3c72,#2a5298);
+    color:white;
+}
+header{
+    padding:40px;
+    text-align:center;
+}
+header h1{
+    color:#ffd700;
+}
+.section{
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.card{
+    background:rgba(255,255,255,0.12);
+    border-radius:16px;
+    padding:25px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:transform 0.3s;
+}
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+}
+footer{
+    text-align:center;
+    padding:20px;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to MMM 🌸</h1>
+    <p>Healing begins within</p>
+</header>
+
+<div class="section">
+    <div class="card">🎵 Music</div>
+    <div class="card">🕉️ Mantra</div>
+    <div class="card">💚 Healing</div>
+    <div class="card">💌 Message</div>
+</div>
+
+<footer>
+    © MMM – Music • Mantra • Healing • Message
+</footer>
+
+</body>
+</html>
