@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MMM | Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#4b1c6f,#1e3c72);
+    color:white;
+}
+.card{
+    width:360px;
+    padding:40px 30px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+    text-align:center;
+    animation:fadeIn 1s ease;
+}
+h1{
+    color:#ffd700;
+    margin-bottom:5px;
+}
+.tagline{
+    font-size:0.9rem;
+    opacity:0.9;
+    margin-bottom:25px;
+}
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    font-size:1rem;
+}
+button{
+    width:100%;
+    padding:14px;
+    background:#4ecdc4;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    font-size:1.1rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+button:hover{background:#3bb6ad;}
+.link{
+    margin-top:15px;
+    font-size:0.9rem;
+    color:#ffd700;
+    cursor:pointer;
+}
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+    <h1>MMM</h1>
+    <div class="tagline">Music • Mantra • Healing • Message</div>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+
+    <div class="link" onclick="location.href='signup.html'">
+        New here? Create account
+    </div>
+</div>
+</body>
+</html>
